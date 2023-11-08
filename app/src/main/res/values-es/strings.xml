@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidStudio-Cigarros-Repaso</string>
+    <string name="cigarros">CIGARROS: </string>
+    <string name="coste">COSTE: </string>
+</resources>

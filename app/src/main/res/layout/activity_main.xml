@@ -3,50 +3,86 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:src="@tools:sample/avatars"
-            app:srcCompat="@drawable/dejar_de_fumar_concepto_la_mano_est_c3_a1_rechazando_la_oferta_del_cigarrillo_aislado" />
+            android:layout_width="243dp"
+            android:layout_height="179dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/dejar_de_fumar" />
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/imgPack_ActivityMain"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="30dp"
             android:backgroundTint="#00FFFFFF"
             android:scaleType="fitEnd"
             android:src="@drawable/abierto_de_paquete_de_cigarrillos" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/cigarros"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lbLeft_ActivityMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/coste"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lbCost_ActivityMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
